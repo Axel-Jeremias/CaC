@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="../assets/js/contacto/contacto.js" type="module" async></script>
+
+    <title>L y D servicios Generales</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="navbar">
+                <img src="../assets/img/logolyd.png" class="logo" alt="L y D logo">               
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#quienessomos">¿Quiénes somos?</a></li>
+                    <li><a href="#ns">Nuestros servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+      
+    <main>
+        <section class="contacto" id="contacto">
+            <h1 class="titulo-contacto">Contacto</h1>
+
+            <form name="contactoForm" onsubmit="validarFormulario(event)" id="form-registro">
+                <fieldset>
+                    <legend>Datos personales:</legend>
+
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" class="input-data" placeholder="Nombre" required/>
+                        </div>
+                        <div class="item">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" class="input-data" placeholder="Apellido" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" class="input-data" placeholder="E-mail" required/>
+                        </div>
+                        <div class="item">
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" name="telefono" class="input-data" placeholder="01-2345-6789" pattern="^([0-9]+-)*[0-9]+$" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="provincia">Provincia</label>
+                            <select name="provincia" id="prov">
+                                <option value="Buenos Aires">Buenos Aires</option>
+                                <option value="Cordoba">Cordoba</option>
+                                <option value="Rio Negro">Rio Negro</option>
+                                <option value="Santa Fe">Santa Fe</option>
+                                <option value="Neuquen">Neuquen</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Servicio</legend>
+
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="info">Tipo de servicio</label>
+                            <label for="albañileria">
+                                <input type="radio" id="albañileria" name="servicio" value="Albañileria"/>
+                                Albañileria
+                            </label>
+                            <label for="electricidad">
+                                <input type="radio" id="electricidad" name="servicio" value="Electricidad y gas"/>
+                                Electricidad y gas
+                            </label>
+                            <label for="pintura">
+                                <input type="radio" id="pintura" name="servicio" value="Pintura"/>
+                                Pintura
+                            </label>
+                            <label for="mantenimiento">
+                                <input type="radio" id="mantenimiento" name="servicio" value="Mantenimiento"/>
+                                Mantenimiento
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="fechaVisita">Fecha para visita</label>
+                            <input type="date" name="fechaVisita" required/>
+                        </div>
+                        <div class="item">
+                            <label for="horarioVisita">Horario para la visita:</label>
+                            <select name="horarioVisita" id="horario" required>
+                                <option value="">Horario</option>
+                                <option value="Mañana">09:00 - 12:00</option>
+                                <option value="Tarde">13:00 - 17:00</option>
+                                <option value="Noche">18:00 - 21:00</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenido-footer">
+            <ul id="lista-footer">
+                <li><a href="#header">Inicio</a></li>   
+                <li><a href="#quienessomos">¿Quiénes somos?</a></li>
+                <li><a href="#ns">Nuestros servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li> 
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

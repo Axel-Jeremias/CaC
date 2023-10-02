@@ -1,0 +1,280 @@
+@import 'animation.css';
+@import 'slider.css';
+@import 'cards.css';
+
+/* saco configuraciones por defecto de CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* creo variables para las fuentes de google fonts */
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--open-sans: 'Open Sans', sans-serif;
+	--negro: #0D0D0D;
+	--grisoscuro: #404040;
+	--grisclaro: #D9D9D9;
+	--blanco: #F2F2F2;
+	--padding-container: 50px 0;
+}
+
+body {
+	background-color: cadetblue;
+}
+
+/* estilo para el header y nav */
+
+.container { 
+	background-color: var(--negro);
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: var(--padding-container);
+}
+
+.navbar {
+	width: 90%;
+	align-items: center;
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	justify-content: space-between;
+}
+
+.logo {
+	border-radius: 15px;
+	width: 5%;
+	min-width: 45px;
+	max-width: 130px;
+	cursor: pointer;
+	display: block;
+	padding: 10px;
+}
+
+/* magia en el nav*/
+
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.navbar ul li a {
+	font-size: 22px;
+	color: var(--blanco);
+	text-decoration: none;
+	font-family: var(--open-sans);
+	text-transform: uppercase;
+	position: relative;
+}
+
+.navbar ul li a::after {
+	content: "";
+	background-color: var(--blanco);
+	position: absolute;
+	left: 0;
+	top: calc(100% + 4px);
+	width: 100%;
+	height: 4px;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.navbar ul li a:hover::after{
+	opacity: 0.8;
+}
+
+.navbar ul li a:hover {
+	color: var(--grisclaro);
+}
+
+/* estilos para cada section*/
+
+section {
+	background-color: var(--grisclaro);
+	margin-top: 10px;
+	max-width: 80svw;
+	margin: 20px auto;
+	padding: 100px 40px 40px 30px;
+	text-align: justify;
+	text-justify: inter-word;
+	border-radius: 40px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.quienessomos, .nuestrosservicios, .titulo-contacto {
+	font-family: var(--poppins);
+	font-size: 45px;
+}
+
+p {
+	font-family: var(--open-sans);
+	font-size: 35px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+	align-items: center;
+	background: #e2e2e2;
+	justify-content: space-around;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 70%;
+	padding: 20px 0;
+}
+
+fieldset {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px 15px;
+}
+
+input, select {
+	padding: 8px 15px;
+	border: 1px solid grey;
+	border-radius: 20px;
+}
+
+.item > input {
+	flex-grow: 3;
+}
+
+label {
+	font-family: var(--poppins);
+	display: block;
+	padding-bottom: 10px; 
+}
+
+.item {
+	flex: 0 0 45%;
+	display: flex;
+	flex-direction: column;
+}
+
+legend {
+	font-family: var(--poppins);
+	margin-left: 20px;
+	background-color: #add3b6;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.form-registro {
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+	align-items: center;
+	background: #e2e2e2;
+	padding: 35px;
+	border-radius: 10px;
+}
+
+input:not([type="radio"]):hover, select:hover {
+	border: 1px solid rgb(0, 0, 0);
+}
+
+button {
+	padding: 10px;
+	border-radius: 25px;
+	border: none;
+	color: white;
+	display: inline-block;
+	cursor: pointer;
+	padding: 15px 35px;
+	font-size: 15px;
+	font-family: var(--open-sans);
+}
+
+button[type="submit"] {
+	background-color: #6bce6e;
+}
+
+button[type="submit"]:hover {
+	background-color: #5fcc63;
+}
+
+button[type="reset"] {
+	background-color: #d36565;
+}
+
+button[type="reset"]:hover {
+	background-color: #dd766f;
+}
+
+.notificacion {
+	animation: fadeOut 1.5s 5s forwards;
+	opacity: 0.95;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	background-color: #4ec050;
+	font: var(--open-sans);
+	font-size: 20px;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.fa-check {
+	margin-right: 10px;
+	color: #0b7224;
+	font-size: 18px;
+}
+
+/* aca le doy margen cuando voy bajando con el navegador y que el efecto sea agradable a la vista*/
+section [id] {
+	scroll-margin-top: 25px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Footer */
+footer {
+	background-color: var(--grisoscuro);
+	height: 20svh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lista-footer > li {
+	padding: 8px;
+	display: inline;
+}
+
+#lista-footer > li > a:hover {
+	color: var(--grisclaro);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+#lista-footer > li > a {
+	color: white;
+	margin: 15px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: var(--open-sans);
+}
+
+#lista-footer > li:not(:last-child) {
+	border-right: 3px solid white;
+}
