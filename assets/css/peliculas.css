@@ -1,0 +1,104 @@
+#cartelera {
+    font-size: 70px;
+    padding-bottom: 20px;
+    font-family: var(--poppins);
+    color: white;
+}
+
+#peliculasGrid {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px;
+}
+
+.peli {
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    max-height: 700px;
+    aspect-ratio: 2 / 3;
+    background: grey;
+    transition: transform .5s ease;
+}
+
+.peli:hover {
+    transform: scale(1.05);
+}
+
+.dataPeli {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px;
+    width: 100%;
+    height: 30%;
+}
+
+.dataPeli > ul {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    list-style-type: none;
+}
+
+.dataPeli > ul > li {
+    font-family: var(--poppins);
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.dataPeli > ul > li > i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.dataPeli > ul > li > span {
+    color: white;
+}
+
+.peli img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease;
+}
+
+.peli:hover img {
+    filter: brightness(50%);
+}
+
+.peli:hover > .dataPeli {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(26, 26, 26, 0.938);
+}
+
+.dataPeli > h6 {
+    font-style: italic;
+    color:white;
+    font-family: var(--poppins);
+    font-weight: 600;
+    text-align: center;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 70em) {
+    #peliculasGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dataPeli > h6 {
+        font-size: 25px;
+    }
+
+    .dataPeli > ul > li > i {
+        font-size: 20px;
+    }
+
+    .dataPeli > ul > li {
+        font-size: 20px;
+    }
+}
