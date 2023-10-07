@@ -1,6 +1,8 @@
 @import 'animation.css';
 @import 'slider.css';
 @import 'cards.css';
+@import 'peliculas.css';
+@import 'faq.css';
 
 /* saco configuraciones por defecto de CSS */
 * {
@@ -146,12 +148,22 @@ fieldset {
 	padding: 10px 15px;
 }
 
-input, select {
+input, select, textarea {
 	padding: 8px 15px;
 	border: 1px solid grey;
 	border-radius: 20px;
 }
 
+textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.box-comentario {
+	flex: 0 0 100%;
+	display: flex;
+	flex-direction: column;
+}
 .item > input {
 	flex-grow: 3;
 }
@@ -190,7 +202,7 @@ input:not([type="radio"]):hover, select:hover {
 	border: 1px solid rgb(0, 0, 0);
 }
 
-button {
+form > button {
 	padding: 10px;
 	border-radius: 25px;
 	border: none;
@@ -203,19 +215,19 @@ button {
 }
 
 button[type="submit"] {
-	background-color: #6bce6e;
-}
-
-button[type="submit"]:hover {
 	background-color: #5fcc63;
 }
 
+button[type="submit"]:hover {
+	background-color: #5dec62;
+}
+
 button[type="reset"] {
-	background-color: #d36565;
+	background-color: #cf2f2f;
 }
 
 button[type="reset"]:hover {
-	background-color: #dd766f;
+	background-color: #f73838;
 }
 
 .notificacion {
