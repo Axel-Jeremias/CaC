@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logolyd.ico">
     <script src="../assets/js/contacto/contacto.js" type="module" async></script>
 
-    <title>L y D servicios Generales</title>
+    <title>Contacto | Cine MasterFrame</title>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
                 <img src="../assets/img/logolyd.png" class="logo" alt="L y D logo">               
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#quienessomos">¿Quiénes somos?</a></li>
-                    <li><a href="#ns">Nuestros servicios</a></li>
+                    <li><a href="./cartelera.html">Cartelera</a></li>
+                    <li><a href="./servicios.html">Preguntas frequentes</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -30,9 +31,9 @@
     </header>
       
     <main>
-        <section class="contacto" id="contacto">
-            <h1 class="titulo-contacto">Contacto</h1>
+        <h1 class="titulo-pagina">Contacto</h1>
 
+        <section class="contacto" id="contacto">
             <form name="contactoForm" onsubmit="validarFormulario(event)" id="form-registro">
                 <fieldset>
                     <legend>Datos personales:</legend>
@@ -58,59 +59,37 @@
                             <input type="tel" name="telefono" class="input-data" placeholder="01-2345-6789" pattern="^([0-9]+-)*[0-9]+$" required/>
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <div class="item">
-                            <label for="provincia">Provincia</label>
-                            <select name="provincia" id="prov">
-                                <option value="Buenos Aires">Buenos Aires</option>
-                                <option value="Cordoba">Cordoba</option>
-                                <option value="Rio Negro">Rio Negro</option>
-                                <option value="Santa Fe">Santa Fe</option>
-                                <option value="Neuquen">Neuquen</option>
-                            </select>
-                        </div>
-                    </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Servicio</legend>
+                    <legend>Consulta</legend>
 
                     <div class="form-group">
                         <div class="item">
-                            <label for="info">Tipo de servicio</label>
-                            <label for="albañileria">
-                                <input type="radio" id="albañileria" name="servicio" value="Albañileria"/>
-                                Albañileria
+                            <label for="info">Tipo de consulta</label>
+                            <label for="tickets">
+                                <input type="radio" id="tickets" name="tipoConsulta" value="Ticket"/>
+                                Tickets
                             </label>
-                            <label for="electricidad">
-                                <input type="radio" id="electricidad" name="servicio" value="Electricidad y gas"/>
-                                Electricidad y gas
+                            <label for="peliculas">
+                                <input type="radio" id="peliculas" name="tipoConsulta" value="Peliculas"/>
+                                Peliculas
                             </label>
-                            <label for="pintura">
-                                <input type="radio" id="pintura" name="servicio" value="Pintura"/>
-                                Pintura
+                            <label for="alimentos">
+                                <input type="radio" id="alimentos" name="tipoConsulta" value="Alimentos"/>
+                                Alimentos
                             </label>
-                            <label for="mantenimiento">
-                                <input type="radio" id="mantenimiento" name="servicio" value="Mantenimiento"/>
-                                Mantenimiento
+                            <label for="otro">
+                                <input type="radio" id="otro" name="tipoConsulta" value="Otro"/>
+                                Otro
                             </label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <div class="item">
-                            <label for="fechaVisita">Fecha para visita</label>
-                            <input type="date" name="fechaVisita" required/>
-                        </div>
-                        <div class="item">
-                            <label for="horarioVisita">Horario para la visita:</label>
-                            <select name="horarioVisita" id="horario" required>
-                                <option value="">Horario</option>
-                                <option value="Mañana">09:00 - 12:00</option>
-                                <option value="Tarde">13:00 - 17:00</option>
-                                <option value="Noche">18:00 - 21:00</option>
-                            </select>
+                        <div class="box-comentario">
+                            <label for="comentario">Comentario</label>
+                            <textarea id="comentario" name="comentario" rows="6"></textarea>
                         </div>
                     </div>
                 </fieldset>
@@ -124,10 +103,10 @@
     <footer>
         <div class="contenido-footer">
             <ul id="lista-footer">
-                <li><a href="#header">Inicio</a></li>   
-                <li><a href="#quienessomos">¿Quiénes somos?</a></li>
-                <li><a href="#ns">Nuestros servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li> 
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./cartelera.html">Cartelera</a></li>
+                <li><a href="./servicios.html">Preguntas frequentes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </footer>
