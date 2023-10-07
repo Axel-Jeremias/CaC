@@ -1,8 +1,10 @@
-.image-slider {
+/*Contenedor de novedades*/
+
+.novedades {
     max-width: 80svw;
     height: 700px;
     position: relative;
-    margin: auto;
+    margin: 20px auto 40px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -11,31 +13,34 @@
     padding: 0px;
 }
 
+/*La novedad actual*/
+
 .slide {
-    display: none;
+    display: block;
+    width: 100%;
 }
+
+/*Imagen de fondo del contenedor*/
 
 .slide-image {
     display: block;
-    width: auto;
-    height: auto;
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
-    filter: blur(5px);
+    filter: blur(1px) brightness(60%);
 }
 
-.image-slider > .slide:first-child {
-    display: block;
-}
+/*Titulo y descripción de la novedad actual*/
 
-.titulo-slider {
+.info-slide {
     position: absolute;
     top: 10px;
     z-index: 1;
-    padding: 10px 30px;
+    padding: 20px 40px;
 }
 
-.titulo-slider > h3 {
+/*Falta modificar colores y tamaños*/
+.info-slide > h3 {
     font-family: var(--poppins);
     display: inline;
     font-size: 80px;
@@ -45,7 +50,7 @@
     -webkit-text-stroke: 1.5px rgb(0, 0, 0);
 }
 
-.titulo-slider > p {
+.info-slide > p {
     display: block;
     font-family: var(--poppins);
     margin-top: 40px;

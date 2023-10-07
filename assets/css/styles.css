@@ -23,7 +23,7 @@
 }
 
 body {
-	background-color: cadetblue;
+	background-image: linear-gradient(to bottom right, #4e1f3f, #27194b);
 }
 
 /* estilo para el header y nav */
@@ -97,11 +97,10 @@ body {
 /* estilos para cada section*/
 
 section {
-	background-color: var(--grisclaro);
-	margin-top: 10px;
+	background-color: #c185d400;
 	max-width: 80svw;
 	margin: 20px auto;
-	padding: 100px 40px 40px 30px;
+	padding: 10px 40px 40px 30px;
 	text-align: justify;
 	text-justify: inter-word;
 	border-radius: 40px;
@@ -111,9 +110,20 @@ h1 {
 	text-align: center;
 }
 
-.quienessomos, .nuestrosservicios, .titulo-contacto {
-	font-family: var(--poppins);
+h2 {
+	font-family: var(--open-sans);
+	text-align: center;
+	color: white;
 	font-size: 45px;
+	padding-top: 20px;
+}
+
+.titulo-pagina {
+    font-size: 70px;
+	padding-top: 60px;
+    padding-bottom: 20px;
+    font-family: var(--poppins);
+    color: white;
 }
 
 p {
@@ -131,7 +141,7 @@ form {
 	border-radius: 10px;
 	margin: 0 auto;
 	width: 70%;
-	padding: 20px 0;
+	padding: 40px 0;
 }
 
 fieldset {
