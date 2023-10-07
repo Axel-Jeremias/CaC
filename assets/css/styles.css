@@ -246,18 +246,34 @@ button[type="reset"]:hover {
 	position: fixed;
 	bottom: 25px;
 	right: 25px;
-	background-color: #4ec050;
-	font: var(--open-sans);
-	font-size: 20px;
+	font-family: var(--open-sans);
+	font-size: 17px;
 	color: white;
 	padding: 15px;
 	border-radius: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.exito {
+	background-color: #4ec050;
+}
+
+.fallo {
+	background-color: rgb(228, 72, 72);
+}
+
+.notificacion > i {
+	margin-right: 10px;
+	font-size: 30px;
 }
 
 .fa-check {
-	margin-right: 10px;
 	color: #0b7224;
-	font-size: 18px;
+}
+
+.fa-xmark {
+	color: #970505;
 }
 
 /* aca le doy margen cuando voy bajando con el navegador y que el efecto sea agradable a la vista*/

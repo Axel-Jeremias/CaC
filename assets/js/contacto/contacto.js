@@ -6,11 +6,9 @@ async function validarFormulario(e) {
 	const valores = new FormData(e.target);
 	const formulario = Object.fromEntries(valores);
 
-	const hoy = new Date();
-	const fechaFormulario = new Date(formulario.fechaVisita);
-
-	if (fechaFormulario <= hoy) {
-		alert("Fecha invalida");
+	if (formulario.comentario.length <= 10) {
+		alert("Por favor, incluya un comentario (minimo 10 caracteres)");
+		agregarNotificacion("Formulario no enviado", false);
 		return;
 	}
 
@@ -31,11 +29,13 @@ async function enviarFormulario(formulario) {
 	await fetch(sheetURL, configuracion);
 }
 
-function agregarNotificacion(texto) {
+function agregarNotificacion(texto, enviado=true) {
 	const notificacion = document.createElement("div");
+	const icono = enviado ? "fa-check" : "fa-xmark";
+	const tipoNotificacion = enviado ? "exito" : "fallo"
 
-	notificacion.className = "notificacion";
-	notificacion.innerHTML = `<i class="fa-solid fa-check"></i>${texto}`;
+	notificacion.classList.add("notificacion", tipoNotificacion);
+	notificacion.innerHTML = `<i class="fa-solid ${icono}"></i><span>${texto}</span>`;
 
 	const main = document.getElementsByTagName("main")[0];
 	main.append(notificacion);
