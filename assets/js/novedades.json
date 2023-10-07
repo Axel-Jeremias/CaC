@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "John Wick 4K",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque adipisci, nobis cupiditate libero totam harum natus? Accusamus placeat, voluptatibus molestiae animi dignissimos nemo ipsa, praesentium necessitatibus nulla excepturi eligendi veritatis!",
+        "url": "./assets/img/johnwick4.jpeg"
+    },
+    {
+        "titulo": "Spider-Man",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque adipisci, nobis cupiditate libero totam harum natus? Accusamus placeat, voluptatibus molestiae animi dignissimos nemo ipsa, praesentium necessitatibus nulla excepturi eligendi veritatis!",
+        "url": "./assets/img/spider-man.jpg"
+    },
+    {
+        "titulo": "Oppenheimer",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque adipisci, nobis cupiditate libero totam harum natus? Accusamus placeat, voluptatibus molestiae animi dignissimos nemo ipsa, praesentium necessitatibus nulla excepturi eligendi veritatis!",
+        "url": "./assets/img/oppen.jpg"
+    },
+    {
+        "titulo": "Comida",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque adipisci, nobis cupiditate libero totam harum natus? Accusamus placeat, voluptatibus molestiae animi dignissimos nemo ipsa, praesentium necessitatibus nulla excepturi eligendi veritatis!",
+        "url": "./assets/img/pochoclo.jpg"
+    }
+]
