@@ -24,6 +24,13 @@
 
 body {
 	background-image: linear-gradient(to bottom right, #4e1f3f, #27194b);
+	display: flex;
+	min-height: 100svh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
 }
 
 /* estilo para el header y nav */
@@ -289,6 +296,7 @@ html {
 footer {
 	background-color: var(--grisoscuro);
 	height: 20svh;
+	height: 17svh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
