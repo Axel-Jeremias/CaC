@@ -35,36 +35,27 @@ main {
 
 /* estilo para el header y nav */
 
-.container { 
-	background-color: var(--negro);
-	display: flex;
-	width: 100%;
-	height: 10vh;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: var(--padding-container);
-}
-
 .navbar {
-	width: 90%;
+	background-color: var(--negro);
+	padding: 5px 35px;
 	align-items: center;
 	display: flex;
-	margin: 0 auto;
-	padding: 0;
+	height: 100px;
 	justify-content: space-between;
+}
+
+.logo-container {
+	height: 100%;
 }
 
 .logo {
 	border-radius: 15px;
-	width: 5%;
-	min-width: 45px;
-	max-width: 130px;
+    height: 100%;
 	cursor: pointer;
-	display: block;
 	padding: 10px;
 }
 
-/* magia en el nav*/
+/* magia en el nav */
 
 .navbar ul li {
 	list-style: none;
@@ -73,32 +64,19 @@ main {
 }
 
 .navbar ul li a {
-	font-size: 22px;
+	font-size: 2.2rem;
 	color: var(--blanco);
 	text-decoration: none;
 	font-family: var(--open-sans);
 	text-transform: uppercase;
-	position: relative;
-}
-
-.navbar ul li a::after {
-	content: "";
-	background-color: var(--blanco);
-	position: absolute;
-	left: 0;
-	top: calc(100% + 4px);
-	width: 100%;
-	height: 4px;
-	opacity: 0;
-	transition: opacity 1.5s;
-}
-
-.navbar ul li a:hover::after{
-	opacity: 0.8;
+	padding-bottom: 5px;
+	border-bottom: 3px solid rgba(0,0,0,0);
+	transition: border-bottom-color 1.5s;
 }
 
 .navbar ul li a:hover {
 	color: var(--grisclaro);
+	border-bottom-color: var(--blanco);
 }
 
 /* estilos para cada section*/
