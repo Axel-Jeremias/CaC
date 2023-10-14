@@ -18,7 +18,6 @@
     position: relative;
     max-height: 700px;
     aspect-ratio: 2 / 3;
-    background: grey;
     transition: transform .5s ease;
 }
 
