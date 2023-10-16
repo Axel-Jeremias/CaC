@@ -29,10 +29,10 @@ async function enviarFormulario(formulario) {
 	await fetch(sheetURL, configuracion);
 }
 
-function agregarNotificacion(texto, enviado=true) {
+function agregarNotificacion(texto, enviado = true) {
 	const notificacion = document.createElement("div");
 	const icono = enviado ? "fa-check" : "fa-xmark";
-	const tipoNotificacion = enviado ? "exito" : "fallo"
+	const tipoNotificacion = enviado ? "exito" : "fallo";
 
 	notificacion.classList.add("notificacion", tipoNotificacion);
 	notificacion.innerHTML = `<i class="fa-solid ${icono}"></i><span>${texto}</span>`;

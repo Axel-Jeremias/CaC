@@ -28,9 +28,11 @@ async function getMovies() {
 	}
 }
 
-function agregarPelicula(peliculas) {
+function agregarPeliculas(peliculas) {
 	const movieSection = document.getElementById("peliculasGrid");
 
+	// La API tiene un rating de popularidad pero no sirve mucho en este caso
+	// Ordernar por votos funciona mejor para medir popularidad
 	peliculas.results.sort(function (a, b) {
 		return b.vote_count - a.vote_count;
 	});
@@ -38,15 +40,20 @@ function agregarPelicula(peliculas) {
 	for (let pelicula of peliculas.results) {
 		const peliculaDiv = document.createElement("div");
 
+		// Pasamos de YYYY-MM-DD a DD/MM/YY
 		let fecha = pelicula.release_date.split("-").reverse();
 		fecha[2] = fecha[2].substring(2);
 		fecha = fecha.join("/");
 
+		// Si el titulo contiene un texto en parentesis al final, lo sacamos
+		// Usado para titulos que tienen el formato "Titulo en español (en ingles)"
 		peliculaDiv.className = "peli";
 		peliculaDiv.innerHTML = `
-            <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt="">
+            <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt="Portada de la pelicula ${titulo}">
             <div class="dataPeli">
-                <h6>${pelicula.title}</h6>
+				<div class="titulo">
+                	<h6 title="${titulo}">${titulo}</h6>
+				</div>
                 <ul>
                     <li title="Calificación">
                         <i class="fa-solid fa-star" style="color: #fdd649;"></i>

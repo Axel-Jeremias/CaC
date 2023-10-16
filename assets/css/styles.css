@@ -5,6 +5,7 @@
 @import 'faq.css';
 
 /* saco configuraciones por defecto de CSS */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,6 +13,7 @@
 }
 
 /* creo variables para las fuentes de google fonts */
+
 :root {
 	--poppins: 'Poppins', sans-serif;
 	--open-sans: 'Open Sans', sans-serif;
@@ -79,7 +81,7 @@ main {
 	border-bottom-color: var(--blanco);
 }
 
-/* estilos para cada section*/
+/* estilos para cada section */
 
 section {
 	background-color: #c185d400;
@@ -271,6 +273,7 @@ html {
 }
 
 /* Footer */
+
 footer {
 	background-color: var(--grisoscuro);
 	height: 20svh;
