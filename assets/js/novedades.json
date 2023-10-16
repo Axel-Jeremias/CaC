@@ -1,22 +1,22 @@
 [
     {
         "titulo": "John Wick 4K",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque adipisci, nobis cupiditate libero totam harum natus? Accusamus placeat, voluptatibus molestiae animi dignissimos nemo ipsa, praesentium necessitatibus nulla excepturi eligendi veritatis!",
+        "descripcion": "JOHN WICK es un asesino retirado. Pero tras una larga enfermedad que provoca la muerte de su amada esposa, se ve arrastrado de nuevo a un mundo que había abandonado. Un encuentro al azar acaba con John ensangrentado y con el perro que su mujer le dejó como regalo sacrificado. A John solo le queda la venganza.",
         "url": "./assets/img/johnwick4.jpeg"
     },
     {
         "titulo": "Spider-Man",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque adipisci, nobis cupiditate libero totam harum natus? Accusamus placeat, voluptatibus molestiae animi dignissimos nemo ipsa, praesentium necessitatibus nulla excepturi eligendi veritatis!",
+        "descripcion": "Después de ser mordido por una araña alterada genéticamente, el adolescente marginado Peter Parker desarrolla habilidades sobrehumanas similares a las de una araña y adopta una identidad de superhéroe enmascarado para luchar contra el crimen y la injusticia en la ciudad de Nueva York",
         "url": "./assets/img/spider-man.jpg"
     },
     {
         "titulo": "Oppenheimer",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque adipisci, nobis cupiditate libero totam harum natus? Accusamus placeat, voluptatibus molestiae animi dignissimos nemo ipsa, praesentium necessitatibus nulla excepturi eligendi veritatis!",
+        "descripcion": "En tiempos de guerra, el brillante físico estadounidense Julius Robert Oppenheimer, al frente del 'Proyecto Manhattan', lidera los ensayos nucleares para construir la bomba atómica para su país. Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación.",
         "url": "./assets/img/oppen.jpg"
     },
     {
         "titulo": "Comida",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque adipisci, nobis cupiditate libero totam harum natus? Accusamus placeat, voluptatibus molestiae animi dignissimos nemo ipsa, praesentium necessitatibus nulla excepturi eligendi veritatis!",
+        "descripcion": "Para mejorar tu experiencia en nuestras salas, sumamos nuevos combos que llenaran de sabor tu película. No dejes de probar todos nuestros sabores para toda la familia",
         "url": "./assets/img/pochoclo.jpg"
     }
 ]
