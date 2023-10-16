@@ -30,7 +30,6 @@ async function getMovies() {
 
 function agregarPelicula(peliculas) {
 	const movieSection = document.getElementById("peliculasGrid");
-	const divPeliculas = [];
 
 	peliculas.results.sort(function (a, b) {
 		return b.vote_count - a.vote_count;
@@ -61,13 +60,8 @@ function agregarPelicula(peliculas) {
                 </ul>
             </div>`;
 
-		divPeliculas.push(peliculaDiv);
+		movieSection.appendChild(peliculaDiv);
 	}
-
-	movieSection.append(...divPeliculas);
 }
 
-(async () => {
-	const movies = await getMovies();
-	agregarPelicula(movies);
-})();
+getMovies().then((movies) => agregarPeliculas(movies));
