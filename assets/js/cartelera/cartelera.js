@@ -47,6 +47,8 @@ function agregarPeliculas(peliculas) {
 
 		// Si el titulo contiene un texto en parentesis al final, lo sacamos
 		// Usado para titulos que tienen el formato "Titulo en español (en ingles)"
+		const titulo = pelicula.title.replace(/ *\([^)]*\)$/g, "");
+
 		peliculaDiv.className = "peli";
 		peliculaDiv.innerHTML = `
             <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt="Portada de la pelicula ${titulo}">

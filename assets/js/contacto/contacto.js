@@ -10,6 +10,10 @@ async function validarFormulario(e) {
 		alert("Por favor, incluya un comentario (minimo 10 caracteres)");
 		agregarNotificacion("Formulario no enviado", false);
 		return;
+	} else if (/\d/.test(formulario.nombre) || /\d/.test(formulario.apellido)) {
+		alert("Por favor, incluya un nombre y apellido validos.");
+		agregarNotificacion("Formulario no enviado", false);
+		return;
 	}
 
 	await enviarFormulario(valores);
