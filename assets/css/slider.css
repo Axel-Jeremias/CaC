@@ -40,20 +40,22 @@
 .info-slide > h3 {
     font-family: var(--poppins);
     display: inline;
-    font-size: 80px;
+    font-size: 60px;
     background-color: rgba(137, 194, 137, 0.616);
+  opacity: 0.5;
+  border-radius: 20px;
     padding: 10px 15px;
-    color: white;
-    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+    color: black;
+    -webkit-text-stroke: 1.5px, white;
 }
 
 .info-slide > p {
     display: block;
     font-family: var(--poppins);
-    margin-top: 40px;
+    margin-top: 50px;
     width: 70%;
     background-color: rgba(32, 32, 32, 0.356);
     color: white;
     padding: 10px;
-    font-size: 35px;
+    font-size: 30px;
 }
