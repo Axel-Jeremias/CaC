@@ -1,0 +1,42 @@
+{
+    "novedades": [
+        {
+            "titulo": "John Wick 4D",
+            "descripcion": "El capitulo 4 de la popular franquicia ya ha llegado en 4D. En ella, John Wick descubre un camino para derrotar a La Alta Mesa. Pero antes de que pueda ganar su libertad, Wick debe enfrentarse a un nuevo enemigo con poderosas alianzas en todo el mundo.",
+            "url": "johnwick4.jpeg"
+        },
+        {
+            "titulo": "Spider-Man, ahora en cines",
+            "descripcion": "Llega la secuela de la historia de Miles Morales, en la que debe completar una misión para salvar cada universo de Spider-People de la Mancha, un peligroso antagonista, pero sin experiencia, que podría causar un desastre catastrófico.",
+            "url": "spider-man.jpg"
+        },
+        {
+            "titulo": "Oppenheimer",
+            "descripcion": "En tiempos de guerra, el brillante físico estadounidense Julius Robert Oppenheimer, al frente del 'Proyecto Manhattan', lidera los ensayos nucleares para construir la bomba atómica para su país. Impactado por su poder destructivo, Oppenheimer se cuestiona las consecuencias morales de su creación.",
+            "url": "oppen.jpg"
+        },
+        {
+            "titulo": "Nuevos combos",
+            "descripcion": "Para mejorar tu experiencia en nuestras salas, sumamos nuevos combos que llenaran de sabor tu película. No dejes de probar todos nuestros sabores para toda la familia",
+            "url": "pochoclo.jpg"
+        }
+    ],
+    "trailers": [
+        {
+            "titulo": "Wonka",
+            "video": "https://www.youtube.com/embed/YoZfBmtArtE?si=FtDxS2ni-OCHf1DV"
+        },
+        {
+            "titulo": "Los Juegos del Hambre: Balada de Pájaros Cantores y Serpientes",
+            "video": "https://www.youtube.com/embed/RDE6Uz73A7g?si=xi4rh7IdO4NPlDsE"
+        },
+        {
+            "titulo": "Aquaman y el Reino Perdido",
+            "video": "https://www.youtube.com/embed/D3WCrSnCLEM?si=asxsYh3yMUvRSf_w"
+        },
+        {
+            "titulo": "Dune: Parte Dos",
+            "video": "https://www.youtube.com/embed/pMe_te9QUa0?si=kEL43HOluvPlU0Vm"
+        }
+    ]
+}
