@@ -1,5 +1,7 @@
 @import './animations/notificacion-animation.css';
 
+/* Cuando el formulario es enviado o falla, aparece una notifcación abajo a la derecha durante 5 segundos */
+
 .notificacion {
 	animation: fadeOut 1.5s 5s forwards;
 	opacity: 0.95;
@@ -15,18 +17,24 @@
 	align-items: center;
 }
 
+/* Colores de fondo de cada notificación */
+
 .exito {
 	background-color: #4ec050;
 }
 
 .fallo {
-	background-color: rgb(228, 72, 72);
+	background-color: #E44848;
 }
+
+/* Iconos de FontAwesome */
 
 .notificacion > i {
 	margin-right: 10px;
 	font-size: 30px;
 }
+
+/* Color de cada icono */
 
 .fa-check {
 	color: #0b7224;

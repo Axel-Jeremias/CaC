@@ -2,7 +2,7 @@
 
 #peliculasGrid {
     display: grid;
-    grid-gap: 40px;
+    gap: 40px;
     grid-template-columns: repeat(3, 1fr);
     margin: 30px;
 }
@@ -27,7 +27,7 @@
 .dataPeli {
     display: none;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     padding: 15px;
     width: 100%;
     min-height: 30%;

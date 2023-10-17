@@ -1,17 +1,20 @@
 @import './notificacion.css';
 
+/* El formulario en si */
+
 form {
 	display: flex;
-	flex-direction: column;
-	flex-flow: wrap;
+	flex-wrap: wrap;
 	align-items: center;
-	background: #e2e2e2;
+	background: #cacaca;
 	justify-content: space-around;
 	border-radius: 10px;
 	margin: 0 auto;
 	width: 70%;
 	padding: 40px 0;
 }
+
+/* Secciones del formulario */
 
 fieldset {
 	width: 90%;
@@ -21,6 +24,20 @@ fieldset {
 	padding: 10px;
 }
 
+/* La leyenda del fieldset (Datos personales y Consulta) */
+
+legend {
+	font-family: var(--poppins);
+	margin-left: 20px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	font-size: 19px;
+	background-color: #8066c3;
+    color: white;
+}
+
+/* Cada linea dentro del fieldset (e.g. Nombre y apellido) */
+
 .form-group {
 	display: flex;
 	flex-direction: row;
@@ -28,26 +45,28 @@ fieldset {
 	padding: 10px 15px;
 }
 
-input, select, textarea {
-	padding: 8px 15px;
-	border: 1px solid grey;
-	border-radius: 20px;
-}
+/* Los divs para separar cada campo del formulario */
 
-textarea {
-	resize: vertical;
-	min-height: 100px;
-}
-
-.box-comentario {
-	flex: 0 0 100%;
+.item {
+	flex: 0 0 45%;
 	display: flex;
 	flex-direction: column;
 }
 
-.item > input {
-	flex-grow: 3;
+/* Los campos donde insertar el texto */
+
+input, textarea {
+	padding: 8px 15px;
+	border: 1px solid grey;
+	border-radius: 20px;
+	background-color: #ebebeb;
 }
+
+input:not([type="radio"]):hover {
+	border: 1px solid rgb(0, 0, 0);
+}
+
+/* El nombre del campo */
 
 label {
 	font-family: var(--poppins);
@@ -60,42 +79,25 @@ label {
 	font-weight: 600;
 }
 
-.item {
-	flex: 0 0 45%;
+/* Campo para el comentario */
+
+textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+#box-comentario {
+	flex: 0 0 100%;
 	display: flex;
 	flex-direction: column;
 }
 
-legend {
-	font-family: var(--poppins);
-	margin-left: 20px;
-	background-color: #add3b6;
-	padding: 5px 10px;
-	border-radius: 10px;
-	font-size: 19px;
-	background-color: #8066c3;
-    color: white;
-}
-
-.form-registro {
-	display: flex;
-	flex-direction: column;
-	flex-flow: wrap;
-	align-items: center;
-	background: #e2e2e2;
-	padding: 35px;
-	border-radius: 10px;
-}
-
-input:not([type="radio"]):hover, select:hover {
-	border: 1px solid rgb(0, 0, 0);
-}
+/* Botones de borrar y enviar */
 
 form > button {
 	border-radius: 25px;
 	border: none;
 	color: white;
-	display: inline-block;
 	cursor: pointer;
 	padding: 15px 35px;
 	font-size: 18px;
@@ -117,6 +119,8 @@ button[type="reset"] {
 button[type="reset"]:hover {
 	background-color: #f73838;
 }
+
+/* Media queries */
 
 @media screen and (max-width: 1024px) {
 	form {
