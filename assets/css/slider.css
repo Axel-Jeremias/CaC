@@ -10,14 +10,34 @@
     padding: 0px;
 }
 
-/*La novedad actual*/
+#novedades > h2 {
+    margin-bottom: 15px;
+}
+
+/* La novedad actual */
 
 #slide {
     display: block;
+    position: relative;
     width: 100%;
 }
 
-/*Imagen de fondo del contenedor*/
+#slide > h3 {
+    position: absolute;
+    top: 30px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    font-family: var(--poppins);
+    font-size: 60px;
+    padding: 15px 15px 15px 40px;
+    background-color: rgba(58, 58, 58, 0.6);
+    line-height: 1em;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+    max-width: 70%;
+}
+
+/* Imagen de fondo del contenedor */
 
 #slide-image {
     display: block;
@@ -27,36 +47,50 @@
     filter: blur(1px) brightness(60%);
 }
 
-/*Titulo y descripción de la novedad actual*/
+/* Overlay con el titulo y la descripción de la novedad actual */
 
 #info-slide {
     position: absolute;
-    top: 10px;
+    height: 0px;
+    bottom: 0;
     z-index: 1;
-    padding: 20px 40px;
+    transition: height 0.7s ease-in-out;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #info-slide > h3 {
     font-family: var(--poppins);
-    display: inline;
-    font-size: 60px;
-    background-color: rgba(137, 194, 137, 0.616);
-  opacity: 0.5;
-  border-radius: 20px;
-    padding: 10px 15px;
-    color: black;
-    -webkit-text-stroke: 1.5px, white;
+    font-size: 70px;
+    padding: 30px 15px 10px 15px;
+    color: white;
+    line-height: 1em;
+    text-align: center;
 }
 
 #info-slide > p {
     display: block;
     font-family: var(--poppins);
-    margin-top: 50px;
-    width: 70%;
-    background-color: rgba(32, 32, 32, 0.356);
+    margin-top: 10px;
+    width: 95%;
     color: white;
     padding: 10px;
+    margin: 0 auto;
     font-size: 30px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+/* on hover, escondemos el titulo de la izquierda y traemos el overlay */
+
+#slide:hover #info-slide {
+    height: 100%;
+}
+
+#slide:hover > h3 {
+    opacity: 0;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 1366px) {
