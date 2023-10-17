@@ -161,3 +161,37 @@ footer {
 #lista-footer > li:not(:last-child) {
 	border-right: 3px solid white;
 }
+
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 8px;
+	}
+
+	#navbar ul li {
+		margin: 0 10px;
+	}
+
+	section {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 7px;
+	}
+
+	#navbar {
+		padding: 0 15px;
+	}
+
+	#lista-footer > li {
+		display: block;
+		text-align: center;
+	}
+
+	#lista-footer > li:not(:last-child) {
+		border-right: none;
+		border-bottom: 3px solid white;
+	}
+}
