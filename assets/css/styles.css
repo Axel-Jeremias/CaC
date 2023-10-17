@@ -1,8 +1,10 @@
-@import './contacto/formulario.css';
+@import './inicio/trailers.css';
+@import './inicio/slider-novedades.css';
+@import 'footer.css';
+@import 'navbar.css';
 @import './cartelera/cartelera.css';
-@import 'slider.css';
 @import './faq/faq.css';
-@import 'trailers.css';
+@import './contacto/formulario.css';
 
 /* saco configuraciones por defecto de CSS */
 
@@ -12,7 +14,7 @@
 	box-sizing: border-box;
 }
 
-/* creo variables para las fuentes de google fonts */
+/* Variables para las fuentes de google fonts y colores */
 
 :root {
 	--poppins: 'Poppins', sans-serif;
@@ -21,16 +23,22 @@
 	--grisoscuro: #404040;
 	--grisclaro: #D9D9D9;
 	--blanco: #F2F2F2;
-	--padding-container: 50px 0;
 }
+
+/*
+Reglas generales del HTML. 
+Font-size 62.5% nos permite usar valores como 2rem para referirnos a 20px en vez de tener que hacer calculos a cada rato
+*/
 
 html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
 }
 
+/* Junto al body flex, nos aseguramos que el main crezca si el body no ocupa 100svh solo con el contenido */
+
 body {
-	background-image: linear-gradient(to bottom right, #4e1f3f, #27194b);
+	background-image: linear-gradient(to bottom right, #6b2f58, #372566);
 	display: flex;
 	min-height: 100svh;
 	flex-direction: column;
@@ -38,52 +46,6 @@ body {
 
 main {
 	flex: 1;
-}
-
-/* estilo para el header y nav */
-
-#navbar {
-	background-color: var(--negro);
-	padding: 5px 35px;
-	align-items: center;
-	display: flex;
-	height: 100px;
-	justify-content: space-between;
-}
-
-#logo-container {
-	height: 100%;
-}
-
-#logo {
-	border-radius: 15px;
-    height: 100%;
-	cursor: pointer;
-	padding: 10px;
-}
-
-/* magia en el nav */
-
-#navbar ul li {
-	list-style: none;
-	display: inline-block;
-	margin: 0 20px;
-}
-
-#navbar ul li a {
-	font-size: 2.2rem;
-	color: var(--blanco);
-	text-decoration: none;
-	font-family: var(--open-sans);
-	text-transform: uppercase;
-	padding-bottom: 5px;
-	border-bottom: 3px solid rgba(0,0,0,0);
-	transition: border-bottom-color 1.5s;
-}
-
-#navbar ul li a:hover {
-	color: var(--grisclaro);
-	border-bottom-color: var(--blanco);
 }
 
 /* estilos para cada section */
@@ -97,24 +59,17 @@ section {
 	border-radius: 40px;
 }
 
-h1 {
-	text-align: center;
+section [id] {
+	scroll-margin-top: 25px;
 }
+
+/* Reglas generales para titulos h2 y parrafos */
 
 h2 {
-	font-family: var(--open-sans);
 	text-align: center;
+	font-family: var(--open-sans);
 	color: white;
 	font-size: 45px;
-	padding-top: 20px;
-}
-
-#titulo-pagina {
-    font-size: 7rem;
-	padding-top: 60px;
-    padding-bottom: 20px;
-    font-family: var(--poppins);
-    color: white;
 }
 
 p {
@@ -122,56 +77,23 @@ p {
 	font-size: 35px;
 }
 
-/* aca le doy margen cuando voy bajando con el navegador y que el efecto sea agradable a la vista */
+/* El titulo con el nombre de la pagina */
 
-section [id] {
-	scroll-margin-top: 25px;
+#titulo-pagina {
+	text-align: center;
+    font-size: 7rem;
+	padding-top: 60px;
+    padding-bottom: 20px;
+    font-family: var(--poppins);
+    color: white;
 }
 
-/* Footer */
+/* Media queries */
 
-footer {
-	background-color: var(--grisoscuro);
-	min-height: 15svh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#lista-footer {
-	margin: 10px;
-}
-
-#lista-footer > li {
-	padding: 8px;
-	display: inline;
-}
-
-#lista-footer > li > a:hover {
-	color: var(--grisclaro);
-	text-decoration: underline;
-	text-underline-offset: 4px;
-}
-
-#lista-footer > li > a {
-	color: white;
-	margin: 15px;
-	text-decoration: none;
-	font-size: 2rem;
-	font-family: var(--open-sans);
-}
-
-#lista-footer > li:not(:last-child) {
-	border-right: 3px solid white;
-}
-
+/* Laptops y PCs chicas */
 @media screen and (max-width: 1024px) {
 	html {
 		font-size: 8px;
-	}
-
-	#navbar ul li {
-		margin: 0 10px;
 	}
 
 	section {
@@ -179,22 +101,9 @@ footer {
     }
 }
 
+/* Tablets y celulares */
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 7px;
-	}
-
-	#navbar {
-		padding: 0 15px;
-	}
-
-	#lista-footer > li {
-		display: block;
-		text-align: center;
-	}
-
-	#lista-footer > li:not(:last-child) {
-		border-right: none;
-		border-bottom: 3px solid white;
 	}
 }

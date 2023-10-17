@@ -107,6 +107,7 @@
 
 /* Media queries */
 
+/* Laptops y PCs medianas */
 @media screen and (max-width: 1366px) {
     .dataPeli {
         padding: 8px;
@@ -121,6 +122,7 @@
     }
 }
 
+/* Laptops y PCs chicas */
 @media screen and (max-width: 1024px) {
     #peliculasGrid {
         grid-template-columns: repeat(2, 1fr);
@@ -131,6 +133,7 @@
     }
 }
 
+/* Tablets y celulares */
 @media screen and (max-width: 768px) {
     #peliculasGrid {
         justify-items: center;

@@ -1,0 +1,53 @@
+/* Footer */
+
+footer {
+	background-color: var(--grisoscuro);
+	min-height: 15svh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lista-footer {
+	margin: 10px;
+}
+
+/* La lista con los links a cada pagina */
+
+#lista-footer > li {
+	padding: 8px;
+	display: inline;
+}
+
+#lista-footer > li > a {
+	color: white;
+	margin: 15px;
+	text-decoration: none;
+	font-size: 2rem;
+	font-family: var(--open-sans);
+}
+
+#lista-footer > li > a:hover {
+	color: var(--grisclaro);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+#lista-footer > li:not(:last-child) {
+	border-right: 3px solid white;
+}
+
+/* Media queries */
+
+/* Tablets y celulares */
+@media screen and (max-width: 768px) {
+	#lista-footer > li {
+		display: block;
+		text-align: center;
+	}
+
+	#lista-footer > li:not(:last-child) {
+		border-right: none;
+		border-bottom: 3px solid white;
+	}
+}

@@ -1,0 +1,60 @@
+/* estilo para la barra de navegación */
+
+#navbar {
+	background-color: var(--negro);
+	padding: 5px 35px;
+	align-items: center;
+	display: flex;
+	height: 100px;
+	justify-content: space-between;
+}
+
+#logo-container {
+	height: 100%;
+}
+
+#logo {
+	border-radius: 15px;
+    height: 100%;
+	padding: 10px;
+}
+
+/* Lista con los links a cada pagina. On hover, le agregamos un borde blanco abajo */
+
+#navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+#navbar ul li a {
+	font-size: 2.2rem;
+	color: var(--blanco);
+	text-decoration: none;
+	font-family: var(--open-sans);
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	border-bottom: 3px solid rgba(0,0,0,0);
+	transition: border-bottom-color 1.5s;
+}
+
+#navbar ul li a:hover {
+	color: var(--grisclaro);
+	border-bottom-color: var(--blanco);
+}
+
+/* Media queries */
+
+/* Laptops y PCs chicas */
+@media screen and (max-width: 1024px) {
+	#navbar ul li {
+		margin: 0 10px;
+	}
+}
+
+/* Tablets y celulares */
+@media screen and (max-width: 768px) {
+	#navbar {
+		padding: 0 15px;
+	}
+}

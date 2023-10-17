@@ -122,12 +122,14 @@ button[type="reset"]:hover {
 
 /* Media queries */
 
+/* Laptops y PCs chicas */
 @media screen and (max-width: 1024px) {
 	form {
 		width: 100%;
 	}
 }
 
+/* Tablets y celulares */
 @media screen and (max-width: 768px) {
     .form-group {
         flex-direction: column;

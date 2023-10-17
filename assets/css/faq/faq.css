@@ -109,6 +109,7 @@ details[open] > summary::after {
 
 /* Media queries */
 
+/* Laptops y PCs medianas */
 @media screen and (max-width: 1366px) {
 	.ubicacion {
         flex-direction: column;
