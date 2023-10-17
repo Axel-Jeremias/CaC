@@ -1,5 +1,6 @@
+// Closure para el slider. Si no hay hover en el slide actual, pasa a la siguiente novedad
 function iniciarLoop(novedades) {
-    let currentSlider = 1;
+    let numeroSlide = 1;
 
     const slide = document.getElementById("slide");
     const titulo = document.getElementById("titulo");
@@ -10,19 +11,19 @@ function iniciarLoop(novedades) {
 
     return function siguienteSlide() {
         if (!slide.matches(":hover")) {
-            if (currentSlider >= novedades.length) {
-                currentSlider = 1;
+            if (numeroSlide >= novedades.length) {
+                numeroSlide = 1;
             } else {
-                currentSlider++;
+                numeroSlide++;
             }
 
-            const novedadActual = novedades[currentSlider - 1];
+            const nuevaNovedad = novedades[numeroSlide - 1];
 
-            titulo.textContent = novedadActual.titulo;
-            overlayTitulo.textContent = novedadActual.titulo;
-            overlayParrafo.textContent = novedadActual.descripcion;
-            elementoImagen.src = `./assets/img/novedades/${novedadActual.url}`;
-            elementoImagen.alt = novedadActual.titulo;
+            titulo.textContent = nuevaNovedad.titulo;
+            overlayTitulo.textContent = nuevaNovedad.titulo;
+            overlayParrafo.textContent = nuevaNovedad.descripcion;
+            elementoImagen.src = `./assets/img/novedades/${nuevaNovedad.url}`;
+            elementoImagen.alt = nuevaNovedad.titulo;
         }
     }
 }
