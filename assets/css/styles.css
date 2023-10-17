@@ -37,7 +37,7 @@ main {
 
 /* estilo para el header y nav */
 
-.navbar {
+#navbar {
 	background-color: var(--negro);
 	padding: 5px 35px;
 	align-items: center;
@@ -46,7 +46,7 @@ main {
 	justify-content: space-between;
 }
 
-.logo-container {
+#logo-container {
 	height: 100%;
 }
 
@@ -59,13 +59,13 @@ main {
 
 /* magia en el nav */
 
-.navbar ul li {
+#navbar ul li {
 	list-style: none;
 	display: inline-block;
 	margin: 0 20px;
 }
 
-.navbar ul li a {
+#navbar ul li a {
 	font-size: 2.2rem;
 	color: var(--blanco);
 	text-decoration: none;
@@ -76,7 +76,7 @@ main {
 	transition: border-bottom-color 1.5s;
 }
 
-.navbar ul li a:hover {
+#navbar ul li a:hover {
 	color: var(--grisclaro);
 	border-bottom-color: var(--blanco);
 }

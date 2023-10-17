@@ -1,8 +1,8 @@
 /* Contenedor de novedades */
 
-.novedades {
-    max-width: 80svw;
-    height: 700px;
+#novedades {
+    max-width: 85svw;
+    max-height: 800px;
     position: relative;
     margin: 20px auto 40px;
     overflow: hidden;
@@ -12,14 +12,14 @@
 
 /*La novedad actual*/
 
-.slide {
+#slide {
     display: block;
     width: 100%;
 }
 
 /*Imagen de fondo del contenedor*/
 
-.slide-image {
+#slide-image {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -29,15 +29,14 @@
 
 /*Titulo y descripción de la novedad actual*/
 
-.info-slide {
+#info-slide {
     position: absolute;
     top: 10px;
     z-index: 1;
     padding: 20px 40px;
 }
 
-/*Falta modificar colores y tamaños*/
-.info-slide > h3 {
+#info-slide > h3 {
     font-family: var(--poppins);
     display: inline;
     font-size: 60px;
@@ -49,7 +48,7 @@
     -webkit-text-stroke: 1.5px, white;
 }
 
-.info-slide > p {
+#info-slide > p {
     display: block;
     font-family: var(--poppins);
     margin-top: 50px;
