@@ -1,0 +1,34 @@
+#trailers-container {
+    grid-gap: 15px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 20px;
+}
+
+#trailers-container div {
+    min-width: 0;
+}
+
+#trailers-container iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#trailers-container h3 {
+    max-width: 100%;
+    padding: 15px;
+    color:white;
+    font-family: var(--poppins);
+    font-weight: 500;
+    text-align: center;
+    font-size: 3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    #trailers-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
