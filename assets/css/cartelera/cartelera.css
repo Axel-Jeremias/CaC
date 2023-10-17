@@ -1,0 +1,143 @@
+/* La grilla de peliculas en si */
+
+#peliculasGrid {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px;
+}
+
+/* Cada pelicula */
+
+.peli {
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    max-height: 700px;
+    aspect-ratio: 2 / 3;
+    transition: transform .5s ease;
+}
+
+.peli:hover {
+    transform: scale(1.05);
+}
+
+/* La información sobre cada pelicula que aparece on hover */
+
+.dataPeli {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px;
+    width: 100%;
+    min-height: 30%;
+    max-height: 60%;
+}
+
+.peli:hover > .dataPeli {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(26, 26, 26, 0.938);
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+/* Titulo de la pelicula */
+
+.titulo {
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo > h6 {
+    font-style: italic;
+    color:white;
+    font-family: var(--poppins);
+    font-weight: 600;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+/* Rating y fecha */
+
+.dataPeli > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    max-height: 150px;
+    list-style-type: none;
+    min-width: 70%;
+    max-width: 95%;
+}
+
+.dataPeli > ul > li {
+    font-family: var(--poppins);
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+
+.dataPeli > ul > li > span {
+    color: white;
+}
+
+/* Iconos */
+
+.dataPeli > ul > li > i {
+    font-size: 3rem;
+    margin-right: 10px;
+}
+
+/* La portada de la pelicula */
+
+.peli img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease;
+}
+
+.peli:hover img {
+    filter: brightness(50%);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1366px) {
+    .dataPeli {
+        padding: 8px;
+    }
+
+    .titulo > h6 {
+        font-size: 25px;
+    }
+
+    .dataPeli > ul > li, .dataPeli > ul > li > i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #peliculasGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dataPeli > ul > li {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #peliculasGrid {
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dataPeli > ul > li > i {
+        font-size: 20px;
+    }
+}

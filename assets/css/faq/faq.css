@@ -1,0 +1,103 @@
+@import './cards.css';
+
+summary {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--open-sans);
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    background-image: linear-gradient(to right, rgb(85, 161, 135), rgb(70,83,255));
+}
+
+details {
+    margin-bottom: 16px;
+}
+
+details > summary::marker {
+  display: none;
+}
+
+details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+}
+
+details[open] > summary::after {
+    content: "-";
+}
+
+summary:hover {
+    background-image: linear-gradient(to right, rgb(73, 138, 115), rgb(61, 71, 221));
+}
+
+.respuesta {
+    padding: 25px;
+}
+
+.respuesta p {
+    color: white;
+}
+
+.respuesta p:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.respuesta span {
+    color: rgb(245, 119, 228);
+}
+
+.respuesta a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid rgb(202, 92, 188);
+}
+
+.respuesta a:hover {
+    color: rgb(202, 92, 188);
+}
+
+.ubicacion {
+    display: flex;
+}
+
+.texto-ubicacion {
+    padding-right: 40px;
+    flex: 2 1 calc(100% / 2);
+}
+
+.texto-ubicacion > h2 {
+    display: inline-block;
+    font-size: 55px;
+    text-align: left;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    padding: 0 0 1px;
+}
+
+.texto-ubicacion > p {
+    padding: 15px;
+    font-size: 30px;
+}
+
+.mapa {
+    flex: 1 1 calc(100% / 3);
+    aspect-ratio: 4 / 3;
+}
+
+@media screen and (max-width: 1366px) {
+	.ubicacion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto-ubicacion {
+        width: 100%;
+    }
+
+    .mapa {
+        width: 70%;
+    }
+}

@@ -1,0 +1,37 @@
+@import './animations/notificacion-animation.css';
+
+.notificacion {
+	animation: fadeOut 1.5s 5s forwards;
+	opacity: 0.95;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	font-family: var(--open-sans);
+	font-size: 17px;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.exito {
+	background-color: #4ec050;
+}
+
+.fallo {
+	background-color: rgb(228, 72, 72);
+}
+
+.notificacion > i {
+	margin-right: 10px;
+	font-size: 30px;
+}
+
+.fa-check {
+	color: #0b7224;
+}
+
+.fa-xmark {
+	color: #970505;
+}
