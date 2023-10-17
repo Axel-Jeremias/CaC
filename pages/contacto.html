@@ -19,7 +19,7 @@
     <header id="header">
         <div id="navbar">
             <div id="logo-container">
-                <img src="/assets/img/logo/logo-mf.png" class="logo" alt="MasterFrame logo">
+                <img src="/assets/img/logo/logo-mf.png" id="logo" alt="MasterFrame logo">
             </div>
             <ul>
                 <li><a href="/index.html">Inicio</a></li>
@@ -31,10 +31,10 @@
     </header>
       
     <main>
-        <h1 class="titulo-pagina">Contacto</h1>
+        <h1 id="titulo-pagina">Contacto</h1>
 
-        <section class="contacto" id="contacto">
-            <form name="contactoForm" onsubmit="validarFormulario(event)" id="form-registro">
+        <section id="contacto">
+            <form name="contactoForm" onsubmit="validarFormulario(event)">
                 <fieldset>
                     <legend>Datos personales</legend>
 
@@ -55,7 +55,7 @@
                             <input type="email" name="email" placeholder="E-mail" required/>
                         </div>
                         <div class="item">
-                            <label for="telefono" class="titulo-campo">Telefono</label>
+                            <label for="telefono" class="titulo-campo">Teléfono</label>
                             <input type="tel" name="telefono" placeholder="01-2345-6789" pattern="^([0-9]+-)*[0-9]+$" title="Numeros y guiones (opcionales)" required/>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="box-comentario">
+                        <div id="box-comentario">
                             <label for="comentario" class="titulo-campo">Comentario</label>
                             <textarea id="comentario" name="comentario" rows="6" required></textarea>
                         </div>

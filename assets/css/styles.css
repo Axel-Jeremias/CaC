@@ -55,7 +55,7 @@ main {
 	height: 100%;
 }
 
-.logo {
+#logo {
 	border-radius: 15px;
     height: 100%;
 	cursor: pointer;
@@ -109,7 +109,7 @@ h2 {
 	padding-top: 20px;
 }
 
-.titulo-pagina {
+#titulo-pagina {
     font-size: 7rem;
 	padding-top: 60px;
     padding-bottom: 20px;
