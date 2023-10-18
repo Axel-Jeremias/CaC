@@ -74,7 +74,7 @@ h2 {
 
 p {
 	font-family: var(--open-sans);
-	font-size: 35px;
+	font-size: 3.5rem;
 }
 
 /* El titulo con el nombre de la pagina */
@@ -101,9 +101,19 @@ p {
     }
 }
 
-/* Tablets y celulares */
+/* Tablets */
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 7px;
 	}
+}
+
+/* Celulares */
+@media screen and (max-width: 576px) {
+	html {
+		font-size: 6px;
+	}
+	section {
+        padding: 10px;
+    }
 }

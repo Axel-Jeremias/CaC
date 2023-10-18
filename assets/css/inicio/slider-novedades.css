@@ -131,6 +131,7 @@
     }
 
     #slide > h3 {
+        top: 20px;
         padding-left: 20px;
     }
 
@@ -141,8 +142,12 @@
 
 /* Celulares */
 @media screen and (max-width: 576px) {
+	#novedades {
+		max-width: 98svw;
+	}
     #info-slide > h3, #slide > h3 {
-        font-size: 25px;
+        font-size: 20px;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
     }
 
     #slide > h3 {

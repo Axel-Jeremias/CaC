@@ -56,7 +56,7 @@ details[open] > summary::after {
     color: white;
 }
 
-.respuesta p:not(:last-child) {
+.respuesta > p:not(:last-child) {
     margin-bottom: 35px;
 }
 
@@ -89,7 +89,7 @@ details[open] > summary::after {
 
 .texto-ubicacion > h2 {
     display: inline-block;
-    font-size: 55px;
+    font-size: 5.5rem;
     text-align: left;
     border-bottom: 4px solid rgb(255, 255, 255);
     padding: 0 0 1px;
@@ -122,5 +122,27 @@ details[open] > summary::after {
 
     .mapa {
         width: 70%;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .texto-ubicacion {
+        padding-right: 0;
+    }
+
+    .respuesta {
+        padding: 15px;
+    }
+
+    .mapa {
+        width: 95%;
+    }
+}
+
+/* Celulares */
+@media screen and (max-width: 576px) {
+    #faq {
+        padding: 10px;
     }
 }
