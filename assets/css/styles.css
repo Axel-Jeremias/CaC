@@ -90,15 +90,22 @@ p {
 
 /* Media queries */
 
-/* Laptops y PCs chicas */
-@media screen and (max-width: 1024px) {
+/* Laptops y PCs medianas */
+@media screen and (max-width: 1366px) {
 	html {
-		font-size: 8px;
+		font-size: 9px;
 	}
 
 	section {
         max-width: 100%;
     }
+}
+
+/* Laptops y PCs chicas */
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 8px;
+	}
 }
 
 /* Tablets */

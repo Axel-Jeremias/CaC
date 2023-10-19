@@ -112,14 +112,6 @@
     .dataPeli {
         padding: 8px;
     }
-
-    .titulo > h6 {
-        font-size: 25px;
-    }
-
-    .dataPeli > ul > li, .dataPeli > ul > li > i {
-        font-size: 20px;
-    }
 }
 
 /* Laptops y PCs chicas */
@@ -141,7 +133,7 @@
     }
 
     .dataPeli > ul > li > i {
-        font-size: 20px;
+        font-size: 4.5rem;
     }
 }
 

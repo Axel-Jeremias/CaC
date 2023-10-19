@@ -52,7 +52,7 @@
 	}
 }
 
-/* Tablets y celulares */
+/* Tablets */
 @media screen and (max-width: 768px) {
 	#navbar {
 		padding: 0 15px;
@@ -68,5 +68,16 @@
 
 	#navbar ul li {
 		padding: 10px 0px;
+	}
+
+	#logo-container {
+		height: 70%;
+	}
+}
+
+/* Celulares */
+@media screen and (max-width: 576px) {
+	#navbar {
+		padding: 0 5px;
 	}
 }
