@@ -20,6 +20,7 @@ summary {
     align-items: center;
     list-style: none;
     background-image: linear-gradient(to right, rgb(85, 161, 135), rgb(70,83,255));
+    text-align: left;
 }
 
 summary:hover {
