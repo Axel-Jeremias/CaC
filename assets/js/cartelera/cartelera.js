@@ -49,6 +49,10 @@ function agregarPeliculas(peliculas) {
 		// Usado para titulos que tienen el formato "Titulo en español (en ingles)"
 		const titulo = pelicula.title.replace(/ *\([^)]*\)$/g, "");
 
+		// The Movie Database cambió el rating que devuelve a uno con 3 decimales
+		// Para nuestro uso, lo convertimos a uno con 1 decimal como era antes
+		const rating = pelicula.vote_average.toFixed(1);
+
 		peliculaDiv.className = "peli";
 		peliculaDiv.innerHTML = `
             <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt="Portada de la pelicula ${titulo}">
@@ -59,7 +63,7 @@ function agregarPeliculas(peliculas) {
                 <ul>
                     <li title="Calificación">
                         <i class="fa-solid fa-star" style="color: #fdd649;"></i>
-                        <span>${pelicula.vote_average}</span>
+                        <span>${rating}</span>
                     </li>
                     <li title="Fecha de lanzamiento">
                         <i class="fa-regular fa-calendar" style="color: #ffffff;""></i>
